@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>DOM(要素の取得)</title>
+  <style>
+    .bg-dark {
+      background-color: #888;
+      height: 200px;
+      width: 200px;
+    }
+    .large {
+      height: 400px;
+      width: 400px;    
+    }
+    .position {
+      margin-left: 100px;
+    }
+    .bg-red {
+      background-color: #f00;
+      height: 200px;
+      width: 200px;  
+    }
+  </style>
+</head>
+<body>
+    <ul>
+      <li id="hoge">0</li>
+      <li class="fuga">1</li>
+      <li class="fuga">2</li>
+      <li class="fuga">3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+    </ul>
+
+    <form action="" id="parent">
+      <select name="fruits" id="fruits">
+        <option value="grape">グレープ</option>
+        <option value="orange">オレンジ</option>
+        <option value="apple">アップル</option>
+      </select>
+    </form>
+    <button id="btn">ボタン</button>
+
+    <div>
+      <button id="add">追加</button>
+      <p id=target></p>
+    </div>
+
+    <div>
+      <button id="change">スタイル変更</button>
+      <div id="target2" class="bg-dark"></div>
+    </div>
+
+    <div>
+      <button id="func">関数</button>
+      <div id="target3" class="bg-dark hoge fuga moge fugo"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

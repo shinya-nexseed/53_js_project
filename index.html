@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+
+  <script type="text/javascript">
+    console.log('Hello JavaScript!');
+    // これはコメント
+    console.log('Hiroshi');
+    console.log('Nohara');
+    console.log('Hiroshi' + 'Nohara');
+    console.log(10 * 3);
+    console.log(10 % 3);
+
+    // プログラミング5大文法
+    // ①変数
+    // ②配列
+    // ③連想配列
+    // ④条件分岐文
+    // ⑤繰り返し文
+
+    let name = '野原ひろし';
+    let age = 35;
+    console.log(name);
+    console.log('name');
+    console.log(age);
+
+    age = 36; // 再代入
+    console.log(age);
+
+    let country = "Japan"; // 初めて定義
+    console.log(country);
+    country = "Philippines"; // 再代入
+
+    console.log(country);
+    country = "Japan"; // 再代入
+
+    console.log('私は今' + country + 'にいます。');
+    console.log(`私は今${country}にいます。`);
+
+
+    // 配列
+    let student_lists = ['マウ', 'かずや', 'チッピ', 'ひろと', 'しゅんや'];
+    //                    0       1         2         3         4
+    console.log(student_lists[0]);
+    console.log(student_lists[3]);
+    console.log(student_lists[10]);
+
+    student_lists.push('ボーちゃん');
+    console.log(student_lists[5]);
+
+    let applications = ['LINE', 'Facebook', 'Twitter'];
+    console.log(applications);
+    applications.push('Instagram');
+    console.log(applications[3]);
+
+    // キャメルケース
+      // fullName
+      // firstName
+      // lastName
+    // スネークケース
+      // full_name
+      // first_name
+      // last_name
+
+
+    // 連想配列
+    let profile = {name: '野原ひろし', age: 35, gender: 'Male'};
+    // 1件取得するには2通り
+    console.log(profile['name']);
+    console.log(profile.name);
+    console.log(profile.gender);
+    profile.hobby = 'ゴルフ';
+    console.log(profile.hobby);
+
+    let capitalCities = {Japan: 'Tokyo', Phillippines: 'Manila'};
+    console.log(capitalCities);
+    capitalCities.America = 'Washington';
+    console.log(capitalCities['America']); // PHPの場合はこっちと同じ文法になる
+    console.log(capitalCities.America);
+
+    // 条件分岐
+    // if
+    let int = 10;
+    // ()の中に何かしらの条件式をいれる
+    if (int != 1) {
+      console.log('ほげ');
+    }
+
+    // 5つのデータ型
+      // 整数型 Integer 3
+      // 小数点型 Float 3.14
+      // 文字列型 String ''または""で囲われた文字
+      // 論理型 Boolean trueまたはfalseの2つの値のみで表現される
+      // 配列型 Array タンス
+
+    let age2 = 31;
+    if (20 <= age2 && age2 < 30) {
+        console.log('20代です');
+    }
+
+    // 論理値の別表現
+    // true  : 1
+    // false : 0
+    if (0) {
+        console.log('もげ');
+    }
+    // 論理演算子を複数個使うことも可能
+    // &&と||では&&が先に読まれる
+    if (true || true && false) {
+        console.log('むご');
+    }
+
+    if (true || 1 && false || 0 && 1 == 1) {
+        console.log('むげ');
+    }
+
+    // falseだったときの処理
+    // のび太くんがテストの点数で◯点をとったときのみんなの反応
+    let score = 200;
+    if (score == 0) {
+        console.log('ままおこだよ！');
+    } else if(1 <= score && score < 40) {
+        console.log('ドラえもんが喜ぶ！');
+    } else if(40 <= score && score <= 99) {
+        console.log('ママが喜ぶ！');
+    } else if(score == 100) {
+        console.log('たぶんもしもボックス使った');
+    } else {
+        console.log('数値がテストの点数範囲外です');
+    }
+
+    // 繰り返し文
+    // for
+
+    for (let i = 0; i < 10; i = i + 1) {
+        console.log(i);
+    }
+
+    // for文と配列の組み合わせ
+    // 配列に入っている要素の数だけ繰り返しを実行し中のデータを表示する
+    let members = ['たくと', 'しゅんや', 'れん', 'のべ', 'ボー', 'ちっぴ'];
+
+    let c = members.length;
+    // .lengthは配列の要素数を数えて返す処理
+    console.log(c);
+
+    // プログラミングは基本ルールの応用（基本ルールは絶対）
+    for (let i = 0; i < c; i++) {
+        console.log(members[i]);
+    }
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
